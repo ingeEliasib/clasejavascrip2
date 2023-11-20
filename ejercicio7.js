@@ -20,8 +20,9 @@ if (variableUsuario>=60000) {
 }
 function porcentaje(x, y){
     total = x * y
-    mensaje=(mensaje + total.toLocaleString().toString() + moneda).toString;
-    document.write("<H1>mensaje + total.toLocaleString().toString() + moneda</H1>")
+    mensaje=(mensaje + total.toLocaleString().toString() + moneda);
+    // document.write("<H1>mensaje + total.toLocaleString().toString() + moneda</H1>")
+    document.write("<H1>"+mensaje+"</H1>")
     return alert(mensaje + total.toLocaleString().toString() + moneda);
     
     
