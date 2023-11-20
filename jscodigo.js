@@ -35,15 +35,31 @@ alert("bienvenido")
 //     }
 // }while(aprobado== true)
 
-let valorUsuario, calculo =0
-let total=0.0;
-
-valorUsuario= +prompt("ingrese el valor de declaracion de renta")
-
-if (valorUsuario=) {
-    
-} else {
-    
-}
+let sexo, nombreCompleto, mensaje, letraNombre = "";
+let repetir = true;
+//en este pedazo tomaremos las entradas del usuario nombre y sexo
+nombreCompleto = prompt(`Bienvenido a su programa de división de grupos.\nPor favor, ingrese su nombre y sexo para la clasificación.\nIngrese su nombre`).toLowerCase();
+letraNombre = nombreCompleto[0];
+sexo = prompt("Ingrese su sexo (femenino o masculino)").toLowerCase();
+//aca creo el bucle para verificar los datos
+while (repetir) {
+    if (sexo === "femenino" || sexo === "masculino") {
+        if (sexo === "femenino") {
+            mensaje = letraNombre < "m" ? `Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo A` : `Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo B`;
+            alert(mensaje);
+            document.write("<h1>Mensaje de bienvenida</h1>");
+            document.write(`Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo A`);
+            repetir = false;
+        } else {
+            mensaje = letraNombre < "n" ? `Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo A` : `Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo B`;
+            alert(mensaje);
+            document.write("<h1>Mensaje de bienvenida</h1>");
+            document.write(`Hola ${nombreCompleto}, su sexo es ${sexo}. Usted pertenece al Grupo A`);
+            repetir = false;
+        }
+    } else {
+        sexo = prompt(`El sexo no es femenino ni masculino.\nPor favor, elija solo uno de los dos.\nIngrese su sexo (femenino o masculino)`).toLowerCase();
+           }
+} 
 
 
