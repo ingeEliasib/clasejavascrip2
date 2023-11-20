@@ -14,15 +14,26 @@ if (variableUsuario>=60000) {
     porcentaje(variableUsuario,e);
     
 } else if (variableUsuario>=35000 && variableUsuario<60000) {
-    alert(mensaje + porcentaje(variableUsuario,e).toString());
+
+    porcentaje(variableUsuario,d);
+
 }else if (variableUsuario>=20000 && variableUsuario<35000) {
-    alert(mensaje + porcentaje(variableUsuario,e).toString());
+
+    porcentaje(variableUsuario,c);
+
+}else if (variableUsuario>=20000 && variableUsuario<35000) {
+
+    porcentaje(variableUsuario,b);
+
+}else if (variableUsuario>=20000 && variableUsuario<35000) {
+
+    porcentaje(variableUsuario,a);
+
 }
 function porcentaje(x, y){
     total = x * y
-    mensaje=(mensaje + total.toLocaleString().toString() + moneda).toString;
-    document.write("<H1>mensaje + total.toLocaleString().toString() + moneda</H1>")
+    let mensaPagina = mensaje + total.toLocaleString().toString() + moneda;
+    document.write("<H1>"+ mensaPagina + "</H1>");
     return alert(mensaje + total.toLocaleString().toString() + moneda);
-    
     
 }
