@@ -24,4 +24,5 @@ function porcentaje(x, y){
     document.write("<H1>mensaje + total.toLocaleString().toString() + moneda</H1>")
     return alert(mensaje + total.toLocaleString().toString() + moneda);
     
+    
 }
