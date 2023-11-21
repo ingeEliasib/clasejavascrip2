@@ -20,4 +20,4 @@ while (i<=10) {
     document.write(i + "<br />");
     i++;
 }
-// buble while
+// bucle while este codigo es de la clase de sololearn
