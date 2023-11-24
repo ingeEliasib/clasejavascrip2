@@ -16,8 +16,7 @@
         
     }
     // Tu código va aquí
-    // while(seconds >= 0){
-    //     seconds-=1
-    //     alert(seconds)
-    // }
-    
+    while(seconds >= 0){
+        seconds-=1
+        alert(seconds)
+    }
