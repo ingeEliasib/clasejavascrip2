@@ -1,4 +1,9 @@
-    //creo mis variables
+// codigo by Ing Eliasib
+/*
+codigo que ejecuta una sencilla division sin usar el operador de division / o %
+realizando las verificaciones sencillas antes de realizar el proceso
+*/
+//creo mis variables
     
     let mensaje =`Bienvenido a su software de division sin operador de dividendo \n `;
     let opciones=``;
